@@ -1,6 +1,6 @@
-﻿## 快速开始
+﻿## Quick Start
 
-### 环境要求
+### Environment
 
 - .NET >= 9.x
 - PostgreSQL >= 13.x
