@@ -1,0 +1,25 @@
+# ignore build output directories
+bin/
+obj/
+
+# ignore Visual Studio specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ignore temporary files
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+
+# ignore Visual Studio folders
+.vs/
+
+# ignore NuGet packages
+*.nupkg
+packages/
+
+# ignore publish files
+publish/
