@@ -21,6 +21,10 @@ public class CreateQuestionCommandValidator : AbstractValidator<CreateQuestionCo
 
         RuleFor(command => command.Description)
             .MaximumLength(DataSchemaConstants.DefaultDescriptionTitleLength);
+
+        RuleFor(command => command)
+            .Must(command => command.Title != command.Description)
+            .WithMessage("问题标题和描述不能相同");
     }
 }
 

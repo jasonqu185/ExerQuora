@@ -27,6 +27,6 @@ public class FollowUserConfiguration : IEntityTypeConfiguration<FollowUser>
             .WithMany(u => u.Followers)
             .HasForeignKey(fu => fu.FolloweeId)
             .IsRequired()
-            .OnDelete(DeleteBehavior.NoAction);
+            .OnDelete(DeleteBehavior.NoAction);        
     }
 }
